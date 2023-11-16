@@ -1,16 +1,18 @@
 /* body{overflow: hidden;} */
-
+.wrap{background: #000;}
 /* header */
 header { height: 10rem; position: relative; } 
-header .gnb { display: flex; justify-content: space-between; height: inherit; } 
+header .gnb { display: flex; justify-content: space-between; height: inherit; color: #fff;} 
 header .logo { position: absolute; top: 0; left: 50%; transform: translateX(-50%); } 
 header .menu_btn { margin-left: 2rem; } 
 header .gnb>div { line-height: 10rem; } 
 header .header_right { display: flex; line-height: normal; } 
 header .header_right>div { margin-right: 2rem; } 
+header .menu_btn,.logo,.header_right>div{font-size: 1.4rem;}
 
 header .nav_wrap{position: fixed; top: 0; transform: translateX(-100%); transition: transform .3s ease; overflow-y: scroll;  width: 30%; height: 100vh; }
 header .nav { background: #fff; padding-left: 2rem; padding-top: 10rem; padding-bottom: 2rem; } 
+header .nav a { color: #000;} 
 header .nav_wrap.open { transform: translateX(0);  } 
 header .nav .close_btn{position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer;}
 header .nav .menu{font-size: 2rem; line-height: 150%; text-transform: uppercase; margin-bottom: 2rem;}
@@ -21,12 +23,15 @@ header .nav .search input{border: none; border-bottom: 1px solid #888; padding-b
 header .nav .search button{border: none; background: #fff;}
 
 /* main */
-main .item_wrap { width: 100%; display: flex; flex-wrap: wrap; margin-top: 2rem; } 
-main .item_box { width: 30rem; height: 34rem; text-align: center; justify-content: center; align-items: center; margin: auto; margin-bottom: 2rem; } 
+main .item_wrap { width: 100%; display: flex; flex-wrap: wrap; margin-top: 2rem; color: #fff;} 
+main .item_box { width: 30%; height: 34rem; text-align: center; justify-content: center; align-items: center; margin: auto; margin-bottom: 2rem; } 
 main .item_txt { margin-top: 2rem; } 
 main .item_txt>div { line-height: 150%; } 
-main .item_img { width: 100%; height: 80%; background: url(https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center / cover; } 
+main .item_img { width: 100%; height: 80%; background: url('https://images.unsplash.com/photo-1525362081669-2b476bb628c3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center / cover; } 
 
 /* footer */
 footer { padding: 10rem 0; } 
-footer .container { display: flex; justify-content: space-around; } 
+footer .container { display: flex; justify-content: space-around; text-transform: uppercase; color: #fff;} 
+footer .title{font-size: 2.4rem;}
+footer .f_title{font-size: 1.6rem; margin-bottom: 2rem;}
+footer .f_txt{ line-height: 150%;}
