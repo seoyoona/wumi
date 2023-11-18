@@ -10,7 +10,7 @@ header .header_right { display: flex; line-height: normal; }
 header .header_right>div { margin-right: 2rem; } 
 header .menu_btn,.logo,.header_right>div{font-size: 1.4rem;}
 
-header .nav_wrap{position: fixed; top: 0; transform: translateX(-100%); transition: transform .3s ease; overflow-y: scroll;  width: 30%; height: 100vh; }
+header .nav_wrap{position: fixed; top: 0; transform: translateX(-100%); transition: transform .3s ease; overflow-y: scroll;  width: 25%; height: 100vh; }
 header .nav { background: #fff; padding-left: 2rem; padding-top: 10rem; padding-bottom: 2rem; } 
 header .nav a { color: #000;} 
 header .nav_wrap.open { transform: translateX(0);  } 
