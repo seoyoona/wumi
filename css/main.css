@@ -22,6 +22,14 @@ header .nav .search{margin-top: 2rem;}
 header .nav .search input{border: none; border-bottom: 1px solid #888; padding-bottom: 10px;}
 header .nav .search button{border: none; background: #fff;}
 
+header .bag_wrap{position: fixed; top: 0; transform: translateX(200%); transition: transform .3s ease; overflow-y: hidden;  width: 70%; height: 100vh; }
+header .bag_side{background: #fff; padding-left: 2rem; padding-top: 10rem; padding-bottom: 2rem; height: 100vh; }
+header .bag_side a,.bag_side>div { color: #000;} 
+header .bag_wrap.open { transform: translateX(100%);} 
+header .bag_side>.close_btn{position: absolute; top: 2rem; left: 2rem; font-size: 2rem; cursor: pointer;}
+header .bag_side>.close_btn>i{color: #000;}
+
+
 /* main */
 main .item_wrap { width: 100%; display: flex; flex-wrap: wrap; margin-top: 2rem; color: #fff;} 
 main .item_box { width: 30%; height: 34rem; text-align: center; justify-content: center; align-items: center; margin: auto; margin-bottom: 2rem; cursor: pointer;} 

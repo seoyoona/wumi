@@ -13,3 +13,18 @@ closeBtn.addEventListener('click',function(){
     nav.classList.remove('open');
     body.style.overflow = 'auto';
 })
+
+// bag
+const bagBtn = document.querySelector('.bag');
+const bag = document.querySelector('.bag_wrap');
+const bagCloseBtn = document.querySelector('.bag_side >.close_btn');
+
+bagBtn.addEventListener('click',function(){
+    bag.classList.toggle('open');
+    body.style.overflow = 'hidden';
+})
+
+bagCloseBtn.addEventListener('click',function(){
+    bag.classList.remove('open');
+    body.style.overflow = 'auto';
+})
