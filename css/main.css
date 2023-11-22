@@ -15,6 +15,7 @@ header .nav { background: #fff; padding-left: 2rem; padding-top: 10rem; padding-
 header .nav a { color: #000;} 
 header .nav_wrap.open { transform: translateX(0);} 
 header .nav .close_btn{position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer;}
+header .nav .close_btn>i{color: #000;}
 header .nav .menu{font-size: 2rem; line-height: 150%; text-transform: uppercase; margin-bottom: 2rem;}
 header .nav .sub_menu{line-height: 150%; text-transform: uppercase;}
 header .nav .sub_menu_2{margin-top: 2rem;}
